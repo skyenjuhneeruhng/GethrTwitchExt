@@ -1,0 +1,27 @@
+// Bootstrap Color Overrides.
+$pink: #dd6d7e;
+$yellow: #f5db65;
+$teal: #90e599;
+$cyan: #84dadb;
+$gray: #efefef;
+$gray-dark: #cccccc;
+
+// Custom colors.
+$spotify-green: #82d079;
+
+$colors: (
+    "pink": $pink,
+    "yellow": $yellow,
+    "teal": $teal,
+    "cyan": $cyan,
+    "gray": $gray,
+    "gray-dark": $gray-dark,
+    "spotify-green": $spotify-green
+);
+
+$theme-colors: (
+    "info": $cyan,
+    "warning": $yellow,
+    "success": $teal,
+    "danger": $pink
+);

@@ -1,0 +1,11 @@
+/conf/
+/node_modules/
+/playground
+/public/css
+/public/fonts/vendor
+/public/js
+/public/mix-manifest.json
+npm-debug.log
+yarn-error.log
+.env
+/.idea/

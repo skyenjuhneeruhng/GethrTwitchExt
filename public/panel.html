@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @font-face {
+                font-family: 'Josefin Sans Thin';
+                font-style: normal;
+                font-weight: 400;
+                src:url(fonts/josefin/josefin-sans-thin_71d6e073b68301383ab97589c59bc40f.woff) format('woff'),
+                    url(fonts/josefin/josefin-sans-thin_71d6e073b68301383ab97589c59bc40f.ttf) format('truetype');
+            }
+            @font-face {
+                font-family: 'Josefin Sans Light';
+                font-style: normal;
+                font-weight: 400;
+                src:url(fonts/josefin/josefin-sans-light_d2d342353b3575582bdd7978b1401569.woff) format('woff'),
+                    url(fonts/josefin/josefin-sans-light_d2d342353b3575582bdd7978b1401569.ttf) format('truetype');
+            } 
+        </style>
+        <title>Panel View</title>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body class="panel">
+        <div id="app">Hello world!</div>
+        
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <script src="js/manifest.js"></script>
+        <script src="js/vendor.js"></script>
+        <script src="js/app.js"></script>
+        <!-- <script>
+            ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+            p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+            };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+            n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1fc8wv8zag5ca.cloudfront.net/2.6.2/sp.js","snowplow"));
+
+            window.snowplow('newTracker', 'sc', 's-dev.gethr.to', { // Initialise a tracker
+            appId: 'twitch-ext',
+            platform: 'web',
+            crossDomainLinker: function (link) { return true },
+            contexts: {
+                    webPage: true,
+                    performanceTiming: true
+                },
+            post: true,
+            forceSecureTracker: true
+            });
+
+            // window.snowplow('enableLinkClickTracking', {'whitelist': 'clickable'});
+        </script> -->
+    </body>
+</html>

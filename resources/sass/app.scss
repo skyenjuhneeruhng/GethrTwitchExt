@@ -1,0 +1,190 @@
+@import "variables";
+
+// Node packages.
+@import '~bootstrap/scss/bootstrap';
+@import 'timepicker';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background : white!important;
+}
+
+body {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    background : white!important;
+}
+
+select {
+    &.form-control-plaintext {
+        border-radius: 0;
+        -webkit-appearance: none;
+
+        &.placeholder {
+            color: #757575;
+        }
+    }
+}
+
+.clickable {
+    cursor: pointer;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.icon-wrapper {
+    color: color('spotify-green');
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.media-body {
+    position: relative;
+}
+
+.ml-xs-175 {
+    @include media-breakpoint-down(xs) {
+        margin-left: 1.75em !important;
+    }
+}
+.not-playing{
+    text-align : center;
+    font-weight : bold;
+    line-height : 100px;
+}
+.useraccount{
+    img{
+        border : 1px solid #c9c9c9;
+        width : 100px;
+        height : 100px;
+    }
+    .media-body h6{
+        text-align : left!important;
+        margin : 0!important;
+    }
+}
+.config, .dashboard, .panel, .mobile {
+    background-color: $gray;
+
+    .cover-art-wrapper {
+        width : 100px;
+    }
+
+    .cover-art {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .media-body{
+        width : calc(100% - 100px);
+        padding : 10px 10px 0px 0px;
+    }
+
+    .media-body div:nth-child(2){
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left : 10px;       
+        padding-top : 10px; 
+        font-family: 'Josefin Sans Light', arial;
+    }
+    .media-body h6{
+        text-transform: lowercase!important;
+        font-size : 15px;
+        margin-left : -12px;
+        margin-bottom : 0px;
+        text-align : center;
+        line-height : 24px;
+        font-family: 'Josefin Sans Light', arial;
+        font-weight : bold;
+    }
+    .media-body div small{
+        font-family: 'Josefin Sans Thin', arial;
+        font-size: 16px;
+    }
+    .media-body div span{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .form-control-plaintext {
+        border-bottom: 3px solid $gray-dark;
+        width: 149px;
+
+        @include media-breakpoint-up(sm) {
+            width: 105px;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 149px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 130px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 149px;
+        }
+    }
+
+    .icon-wrapper {
+        font-size: 24px;
+        padding : 10px 10px 0px 0px;
+    }
+}
+
+.video-component {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+
+    .video-component-wrapper {
+        background-color: #efefef;
+        overflow: hidden;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+
+    .now-playing {
+        color: #171717;
+
+        p {
+            line-height: 1.2;
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+    }
+
+    .media-body {
+        overflow: hidden;
+    }
+
+    .cover-art-wrapper {
+        margin-right: 5%;
+        vertical-align: middle;
+    }
+
+    .cover-art {
+        border: 1px solid #171717;
+        max-height: 100%;
+        max-width: 100%;
+        width:100%;
+    }
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
