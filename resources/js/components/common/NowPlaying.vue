@@ -5,7 +5,7 @@
                 @click="clickThrough(albumHref)"
                 title = "see album"
                 class="cover-art clickable"
-                :src="track.Images[0].Url"
+                :src="(track.Images[0].Url)?(track.Images[0].Url):('./assets/default-music.png')"
             >
             <!-- <a :href="track.album.external_urls.spotify" class = "clickable">
                 <img
@@ -25,10 +25,10 @@
             </div>
 
             <div class="icon-wrapper clickable" @click="clickThrough(playlistHref)" title = "follow playlist">
-                <font-awesome-icon :icon="['fab', 'spotify']" />
+                <font-awesome-icon :icon="['fab', 'lastfm-square']" />
             </div>
             <!-- <a class="icon-wrapper clickable" :href="playlist.external_urls.spotify" title = "follow playlist">
-                <font-awesome-icon :icon="['fab', 'spotify']" />
+                <font-awesome-icon :icon="['fab', 'lastfm-square']" />
             </a> -->
         </div>
     </div>

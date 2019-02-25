@@ -5,6 +5,7 @@ $teal: #90e599;
 $cyan: #84dadb;
 $gray: #efefef;
 $gray-dark: #cccccc;
+$lastfm-red : #b72024;
 
 // Custom colors.
 $spotify-green: #82d079;
@@ -16,7 +17,8 @@ $colors: (
     "cyan": $cyan,
     "gray": $gray,
     "gray-dark": $gray-dark,
-    "spotify-green": $spotify-green
+    "spotify-green": $spotify-green,
+    "lastfm-red" : $lastfm-red
 );
 
 $theme-colors: (

@@ -3,7 +3,9 @@
         <template v-if="lastfmAuthenticated">
             <div class = "row mt-3">
                 <div class = "col-12">
+                    <h5>User Key</h5>
                     <div class = "form-group">
+                        
                         <input class = "form-control" :value="(configData.key)?(configData.key):('')"/>
                     </div>
                 </div>
@@ -11,15 +13,16 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="media mt-4 mb-3 useraccount">
-                        <img class="mr-3" :src="(configData.spotify_profile.image[0]['#text'])?(configData.spotify_profile.image[0]['#text']):('')">
+                        <img class="mr-3" :src="(configData.spotify_profile.images)?(configData.spotify_profile.images[0]['#text']):('./assets/default-user.png')">
                         <div class="media-body">
                             <h6 class="mt-0">Logged in as <strong>{{ configData.spotify_profile.name }}</strong>!</h6>
                             <button class="btn btn-danger btn-sm mb-2" @click.prevent="logoutLastfm">Log out</button>
                             <!-- <button class="btn btn-danger btn-sm mb-2" @click.prevent="revokeSpotify">Revoke</button> -->
                         </div>
                     </div>
-
+               
                     <now-playing></now-playing>
+               
                 </div>
                 <div class="col-lg-8">
                     <generate-playlist-form></generate-playlist-form>
